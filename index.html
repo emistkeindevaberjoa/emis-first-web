@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Für dich ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- STARTSEITE -->
+        <div id="startseite">
+
+            <div class="heart">❤️</div>
+
+            <h1>Hey duuu! 🥰</h1>
+
+            <p>
+                Ich habe eine kleine Überraschung für dich vorbereitet.
+            </p>
+
+            <p>
+                Beantworte ein paar Fragen für mich. 💕
+            </p>
+
+            <button onclick="startQuiz()">
+                Los geht's 💗
+            </button>
+
+        </div>
+
+
+        <!-- QUIZ -->
+        <div id="quiz" style="display: none;">
+
+            <div class="heart">💗</div>
+
+            <p id="frageNummer">
+                Frage 1 von 5
+            </p>
+
+            <h1 id="frage">
+                Was magst du am meisten an mir? 🥰
+            </h1>
+
+            <div id="antworten"></div>
+
+        </div>
+
+
+        <!-- KALENDER -->
+        <div id="kalender" style="display: none;">
+
+            <div class="heart">📅</div>
+
+            <h1>Wann hast du Zeit? 💕</h1>
+
+            <p>
+                Such dir einen Tag aus, an dem wir etwas zusammen machen können. 🥰
+            </p>
+
+            <input
+                type="date"
+                id="datum"
+            >
+
+            <br>
+
+            <button onclick="datumAuswaehlen()">
+                Weiter 💗
+            </button>
+
+        </div>
+
+
+        <!-- AKTIVITÄTEN -->
+        <div id="aktivitaeten" style="display: none;">
+
+            <div class="heart">🥰</div>
+
+            <h1>Was möchtest du machen?</h1>
+
+            <p>
+                Such dir etwas Schönes aus. 💕
+            </p>
+
+            <div id="aktivitaetenButtons">
+
+                <button onclick="aktivitaetAuswaehlen('🍕 Essen gehen (Romantisch)')">
+                    🍕 Essen gehen (Romantisch)
+                </button>
+
+                <button onclick="aktivitaetAuswaehlen('🎬 Kino')">
+                    🎬 Kino
+                </button>
+
+                <button onclick="aktivitaetAuswaehlen('🎮 Zusammen Spielo')">
+                    🎮 Zusammen Spielo
+                </button>
+
+                <button onclick="aktivitaetAuswaehlen('🌹 Spaziergang')">
+                    🌹 Spaziergang
+                </button>
+
+                <button onclick="aktivitaetAuswaehlen('🍕 Wettessen bei Ali')">
+                    🍕 Wettessen bei Ali
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ERGEBNIS -->
+        <div id="ergebnis" style="display: none;">
+
+            <div class="heart">💖</div>
+
+            <h1>Unser nächstes Date 🥰</h1>
+
+            <p id="ausgewaehltesDatum"></p>
+
+            <p id="ausgewaehlteAktivitaet"></p>
+
+            <p>
+                Ich freue mich schon darauf. ❤️
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
